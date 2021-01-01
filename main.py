@@ -203,3 +203,85 @@
 # str = "China is a great country"
 # x = re.split("\s", str, re.search("\s", str).__sizeof__())
 # print(x)
+# ----------------------------------------------------------------------------------------------------------------------
+# This part we need to use NumPy.
+# ----------------------------------------------------------------------------------------------------------------------
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4], ndmin=5)
+#
+# print(arr)
+# print('number of dimensions :', arr.ndim)
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6, 7])
+#
+# print(arr[4:])
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6, 7])
+#
+# print(arr[:4])
+# use step
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6, 7])
+#
+# print(arr[1:5:2])
+# import numpy as np
+#
+# arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+#
+# print(arr[:2, 1:4])
+# import numpy as np
+#
+# arr = np.array([1.89, 2, 3, 4])
+# newarr = arr.astype('i4')
+# print(newarr[0])
+# print(newarr.dtype)
+# import numpy as NP
+#
+# x = NP.array([1, 2, 3, 4], ndmin=5)
+# y = x.copy()
+# arrX = x.view()
+# print(y.base)
+# print(arrX.base)
+# print(x.shape)
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2])
+# newarr = arr.reshape(3, 2, 2)
+# print(newarr)
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+#
+# newarr = arr.reshape(2, 2, -1)#给予未知元
+#
+# print(newarr)
+#
+#
+#
+# also, we can use -1 to reshape a array like following code
+#
+#
+# import numpy as NP
+#
+# arr = NP.array([[1, 2, 3], [1, 2, 3]])
+# newarr = arr.reshape(-1)
+# print(newarr)
+#
+# import numpy as np
+#
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+#
+# for x in arr:
+#     for y in x:
+#         print(y)
+# import numpy as NP
+#
+# arr = NP.array([[[1, 2], [2, 3]], [[1, 2], [1, 2]]])
+# for x in arr:
+#     for y in x:
+#         # for z in y:
+#         print(y)
